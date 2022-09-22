@@ -9,6 +9,7 @@ def make_readable(seconds):
 		SS = int(((seconds % 3600) / 60)%60)
 		Human_readable = f"{HH}:{MM}:{SS}"
 		return(Human_readable)
+
 	elif seconds in range(1, 3600):
 		HH = str(00)
 		MM = int(seconds / 60)
@@ -22,5 +23,10 @@ def make_readable(seconds):
 		SS = seconds % 60
 		Human_readable = f"{HH}:{MM}:{SS}"
 		return(Human_readable)
+		
 	else:
-		print("seconds are less than 0")
+		HH = str(00)
+		MM = str(00)
+		SS = str(00)
+		Human_readable = f"{HH}:{MM}:{SS}"
+		return(Human_readable)

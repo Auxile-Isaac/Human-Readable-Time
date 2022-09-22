@@ -2,8 +2,17 @@
 	is a function that let you write a number starting with zeros. it take one argument which is the number of zeros you you want before the number.
 
 	you need to convert your number into a string before using .zfill
+	
 example:
 
 	number = 5
 	number_with_zeros = str(number).zfill(2)
-	print(number_with_zeros)	// result is 005
+	print(number_with_zeros)	""" result to 005 """
+
+
+// :
+	is a python operator that retuns an integer without the float part
+
+Example:
+	
+	print (9 // 4)		""" result to 2 """
